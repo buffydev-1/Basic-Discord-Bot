@@ -67,7 +67,7 @@ Logged in as BOT_NAME!
 ## File Structure
 ```
 .
-├── bot.js         # Main bot logic
+├── index.js         # Main bot logic
 ├── config.js      # Configuration file (contains token and prefix)
 ├── package.json   # Project metadata and dependencies
 ├── README.md      # Documentation
