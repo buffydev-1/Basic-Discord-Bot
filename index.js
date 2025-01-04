@@ -1,11 +1,9 @@
+//That Code Made For Testing And To learn Just Basic Bot - Made By Buffy
+
 const { Client, GatewayIntentBits } = require('discord.js');
 const config = require('./config');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
-
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
 
 client.on('messageCreate', (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
